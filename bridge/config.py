@@ -1,0 +1,10 @@
+CONFIG = {
+    # OPC DA
+    "da_server": "Kepware.KEPServerEX.V6",
+    "group_name": "Channel2.Device1",
+
+    # OPC UA
+    "endpoint": "opc.tcp://0.0.0.0:4840/freeopcua/server/",
+    "namespace_uri": "https://example.com/opcua",
+    "ua_object_name": "Micrologix 1400 Series B",
+}
