@@ -27,7 +27,6 @@ It dynamically maps OPC DA tags into an OPC UA namespace while maintaining real-
 
 ### Key Features
 
-- Environment-driven configuration
 - Dynamic tag discovery
 - Data-type mapping (DA → UA)
 - Timestamp preservation
