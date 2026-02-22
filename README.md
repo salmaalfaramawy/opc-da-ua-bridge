@@ -38,7 +38,10 @@ It dynamically maps OPC DA tags into an OPC UA namespace while maintaining real-
 
 ## Industrial Architecture
 
+
+
 ### <p align="center"> OPC-DA Server  → OpenOPC Client  → FreeOPCUA Server  → OPC UA Clients</p>
+
 
 
 An example of an OPC UA Client would be a SCADA system (Ignition, AVEVA, etc.)
@@ -59,7 +62,7 @@ CONFIG = {
 
     # OPC UA
     "endpoint": "opc.tcp://0.0.0.0:4840/freeopcua/server/",
-    "namespace_uri": "https://example.com/opcua",
+    "namespace_url": "https://example.com/opcua",
     "ua_object_name": "Micrologix 1400 Series B",
 }
 ```
@@ -80,8 +83,8 @@ While suitable for integration-layer and lab environments, this bridge has the f
 - **No Automatic Reconnection Logic:** If the OPC DA server or OPC UA server connection is lost, the application must be restarted manually.
 - **No High Availability / Redundancy:** This is a single-instance bridge and does not implement failover or clustering.
 - **No Security Policy Configuration:** The OPC UA server currently runs without configurable security policies, certificates, or authentication.
-- **Basic Error Handling:** error handling is minimal and does not implement retry backoff strategies or detailed exception classification.
-- **No Performance Optimization for Large Tag Sets:** not stress-tested for thousands of tags or high-frequency updates.
+- **Basic Error Handling:** Error handling is minimal and does not implement retry backoff strategies or detailed exception classification.
+- **No Performance Optimization for Large Tag Sets:** Not stress-tested for thousands of tags or high-frequency updates. Designed for moderate tag counts.
 - **Windows-Only (Due to OpenOPC / DCOM):** Because OPC DA relies on COM/DCOM, this bridge requires Windows.
 
 ---
