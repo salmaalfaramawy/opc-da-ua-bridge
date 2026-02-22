@@ -1,4 +1,4 @@
-# OPC DA ↔ OPC UA Bridge (Industrial Integration Tool)
+# OPC DA ↔ OPC UA Bridge 
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Domain](https://img.shields.io/badge/Industrial-Automation-orange)
