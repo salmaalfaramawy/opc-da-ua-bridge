@@ -28,11 +28,11 @@ def DARead(da_client, group_name):
 
     return values,accesss, dtypes
 
-def opcua_setup(object_name:str, endpoint: str, namespace_uri: str):
+def opcua_setup(object_name:str, endpoint: str, namespace_url: str):
     opcua_server=opcua.Server()
     opcua_server.set_endpoint(endpoint)
 
-    index = opcua_server.register_namespace(namespace_uri)
+    index = opcua_server.register_namespace(namespace_url)
     objects_node=opcua_server.get_objects_node()
 
     obj=objects_node.add_object(index, object_name)
@@ -123,7 +123,7 @@ def main():
     index, ua_server, obj = opcua_setup(
         CONFIG["ua_object_name"],
         CONFIG["endpoint"],
-        CONFIG["namespace_uri"]
+        CONFIG["namespace_url"]
     )
 
     ua_server.start()
