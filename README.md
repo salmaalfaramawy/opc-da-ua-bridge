@@ -27,11 +27,11 @@ It dynamically maps OPC DA tags into an OPC UA namespace while maintaining real-
 
 ### Key Features
 
-- Dynamic tag discovery
-- Data-type mapping (DA → UA)
-- Timestamp preservation
+- Dynamic tag creation and discovery
+- Data-type mapping (DA data types → UA data types)
+- Timestamp preservation (extremely important for industrial processes)
 - Write conflict prevention
-- Logging-based monitoring
+- Logging for monitoring
 - Configuration-based deployment
 ---
 
