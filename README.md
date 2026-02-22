@@ -89,7 +89,7 @@ While suitable for integration-layer and lab environments, this bridge has the f
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **GNU General Public License v3.0 (GPLv3)**.
 
